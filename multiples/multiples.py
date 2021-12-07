@@ -8,16 +8,19 @@ def multiples_of_7_8_9():
     print(seven_multiples)
 
     print("Here is the list of multiples of 8, up to 200: ")
-    eight_multiples = range(0, 201)
-    
-    for n in eight_multiples:
+    range_2 = range(0, 201)
+    eight_multiples = []
+    for n in range_2:
         if n % 8 == 0:
-            print(n)
+            eight_multiples.append(n)
+    print(eight_multiples)
 
     print("Here is the list of multiples of 9, up to 300: ")
-    nine_multiples = range(0, 301)
-    for n in nine_multiples:
+    range_3 = range(0, 301)
+    nine_multiples = []
+    for n in range_3:
         if n % 9 == 0:
-            print(n)
+            nine_multiples.append(n)
+    print(nine_multiples)
         
 multiples_of_7_8_9()  
